@@ -1,0 +1,306 @@
+/*-----------GLOBAL (media queries)
+---------------------------------*/
+body {
+  padding: 0;
+  margin: 0;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-style: normal;
+}
+
+@media (max-width:648px) {
+  /*HIDDEN NAV*/
+  nav a:hover {
+    color: gray;
+  }
+  .menu-hidden {
+    height: auto;
+    background-color: white;
+    overflow: hidden;
+    /*border: 1px solid blue;*/
+  }
+  .dropbtn i{
+    height: 15px;
+    float: left;
+  }
+  .menu-hidden li {
+    list-style-type: none;
+    margin: 5px 0;
+    display: none;
+  }
+  .dropbtn {
+    /*border: 1px solid red;*/
+    margin: 5px;
+    background-color: Transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  .menu-hidden a{
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    /*border: 1px solid blue;*/
+  }
+  .menu-hidden ul a{
+    padding: 2px 50px 2px 50px;
+  }
+  .nav-hidden {
+    display: inline-block;
+    margin-left: 2%;
+    font-weight: normal;
+    /*border: 1px solid red;*/
+  }
+  .menu-hidden a:hover {
+    color: gray;
+  }
+  .hidden {
+    display: block;
+  }
+
+  /*NAV*/
+  nav {
+    display: none;
+  }
+
+  /*CONTENT*/
+  .content {
+    /*padding: 40px 0;*/
+    margin: 0 5%;
+  }
+  .country {
+    margin: 20px 20px 20px 0;
+    /*border: 1px solid red;*/
+  }
+  .button {
+    /*border: 1px solid blue;*/
+    margin: 30px 30px 60px 0;
+  }
+}
+@media (min-width:649px) {
+  .menu-hidden {
+    display: none;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+
+
+    height: 450px;
+    padding: 70px 0;
+    margin: 0 5%;
+    border-bottom: 1px solid lightgray;
+    /*border: 1px solid red;*/
+  }
+}
+
+/*-----------BANNER
+---------------------------------*/
+
+/*---------NAVBAR----------*/
+nav{
+  background-color: white;
+}
+nav ul {
+  margin: 0;
+  list-style-type: none;
+  position: relative;
+  /*border: 1px solid red;*/
+}
+nav ul li {
+  display: inline-block;
+   /*border: 1px solid green;*/
+}
+nav h2 {
+  font-weight: 500;
+  margin-right: 30px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 5px;
+  /* border: 1px solid yellow; */
+}
+nav a:hover {
+  color: gray;
+}
+
+
+
+/*----TEXT TITLE & IMAGE----*/
+.banner {
+  height: 720px;
+  /*https://unsplash.com/photos/s95oB2n9jng*/
+  /*background-image:url("../images/brick-wall-dim.jpg");*/
+
+  /*https://unsplash.com/photos/3wylDrjxH-E*/
+  /*background-image:url("../images/greenplants.jpg");*/
+
+  /*https://unsplash.com/photos/Vo52cKzOxMY*/
+  /*background-image:url("../images/backyard.jpg");*/
+
+  /*https://unsplash.com/photos/YlNra3cjflM*/
+  /*background-image:url("../images/merrychristmas.jpg");*/
+
+  /*https://unsplash.com/photos/uY2kic9wlmc*/
+  /*background-image:url("../images/littlespace.jpg");*/
+
+  /*https://unsplash.com/photos/uY2kic9wlmc*/
+  /*background-image:url("../images/brickwall-livingroom.jpg");*/
+
+  /*To make background image dim for text to stand out*/
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2) ), url("../images/greenplants.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner:last-child {
+  text-align: center;
+}
+.banner h1 {
+  margin: 0;
+  color: white;
+  /*padding: 160px;*/
+  padding-top: 200px;
+  padding-left: 150px;
+  /*border: 1px solid yellow;*/
+  font-size: 56px;
+  font-weight: 200;
+}
+
+/*-----------BANNER TEXT
+---------------------------------*/
+
+.banner-text {
+  text-align: center;
+}
+.banner-text p {
+  font-size: 28px;
+  padding: 70px;
+  margin: 0 5%;
+  line-height: 1.7em;
+  border-bottom: 1px solid lightgray;
+}
+
+/*-----------CONTENT
+---------------------------------*/
+.image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 15em;
+}
+.country {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#btn-info {
+  text-decoration: none;
+  border: 2px solid black;
+  color: black;
+  border-radius: 3px;
+  padding: 10px 15px;
+}
+#btn-info:hover {
+  transition: background-color 0.3s ease;
+  background-color: black;
+  color: white;
+}
+.one {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+.two {
+  background-image:url("../images/merrychristmas.jpg");
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+.three {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+.four {
+  grid-row: 4/5;
+  grid-column: 1/2;
+}
+.five {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+.six {
+  background-image:url("../images/littlespace.jpg");
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+.seven {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+.eight {
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+.nine {
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+.ten {
+  background-image:url("../images/backyard.jpg");
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+.eleven {
+  grid-row: 3/4;
+  grid-column: 3/4;
+}
+.twelve {
+  grid-row: 4/5;
+  grid-column: 3/4;
+}
+
+/*-----------EXTRA
+---------------------------------*/
+.extra {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin: 0 5%;
+  padding: 70px 0;
+  border-bottom: 1px solid lightgray;
+}
+.review p{
+  font-family: 'Courgette', cursive;
+  font-size: 32px;
+  /* border: 1px solid blue; */
+  padding-bottom: 30px;
+}
+.foot {
+  text-align: center;
+  /*border: 1px solid red;*/
+}
+.foot p:not(:first-child) {
+  color: gray;
+}
+.review a {
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  padding: 10px 15px;
+}
+.review a:hover {
+  transition: background-color 0.3s ease;
+  background-color: black;
+  color: white;
+}
+
+/*-----------FOOTER
+---------------------------------*/
+.footer {
+  text-align: center;
+  padding: 50px;
+}
+.social {
+  /* border: 1px solid blue; */
+}
